@@ -91,10 +91,11 @@ Requirements</h1>
 <p>Version in brackets is what was used at the time of writing.</p><ul>
 <li>cmake (3.18.4)</li>
 <li>gcc (10.3.0)</li>
+<li>cppcheck (2.3)</li>
 <li>cmocka (1.1.5-2)</li>
 <li>doxygen (1.9.1)</li>
 </ul>
-<p>A <a href=".devcontainer/Dockerfile">Dockerfile</a> is available for easy setup of the needed tools. If VSCode or another supported editor is used the additional <a href=".devcontainer/devcontainer.json">devcontainer.json</a> can be used to setup the environment automatically.</p>
+<p>A <a href=".devcontainer/Dockerfile">Dockerfile</a> is available for easy setup of the needed tools. Or even easier as prebuilt image on dockerhub <a href="https://hub.docker.com/r/nikolodion/cmake-tdd">nikolodion/cmake-tdd</a>. If VSCode or another supported editor is used one could also use the additional <a href=".devcontainer/devcontainer.json">devcontainer.json</a> to setup the environment automatically.</p>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Usage</h1>
 <p>Please note that the commands have to be executed from the <code>build</code> subdirectory.</p>
@@ -108,10 +109,8 @@ Usage</h1>
 <tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>make test</code>   </td><td class="markdownTableBodyNone">run tests   </td><td class="markdownTableBodyNone">&#160;    </td></tr>
 <tr class="markdownTableRowEven">
-<td class="markdownTableBodyNone"><code>make check</code>   </td><td class="markdownTableBodyNone">run static analysis with cppcheck   </td><td class="markdownTableBodyNone">&#160;    </td></tr>
-<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>make doc</code>   </td><td class="markdownTableBodyNone">generate documentation   </td><td class="markdownTableBodyNone">to view open <a href="build/doc/html/index.html">build/doc/html/index.html</a>    </td></tr>
-<tr class="markdownTableRowEven">
+<tr class="markdownTableRowOdd">
 <td class="markdownTableBodyNone"><code>make clean</code>   </td><td class="markdownTableBodyNone">remove compiled files   </td><td class="markdownTableBodyNone">&#160;   </td></tr>
 </table>
 <p>If VSCode is used these commands are also available as tasks in <a href=".vscode/tasks.json">tasks.json</a>.</p>
@@ -149,7 +148,7 @@ License</h1>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Thu Jun 24 2021 08:16:06 for cmake-cmocka-tdd-template by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
+    <li class="footer">Generated on Thu Jun 24 2021 19:24:59 for cmake-cmocka-tdd-template by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>
 </body>
